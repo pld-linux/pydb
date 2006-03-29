@@ -7,7 +7,7 @@ License:	GPL v2
 Group:		Development/Languages/Python	
 Source0:	http://dl.sourceforge.net/sourceforge/bashdb/%{name}-%{version}.tar.gz
 # Source0-md5:	db380a4fb96a378edb5be4d8656981ee
-Source1:	http://twittner.host.sk/%{name}-doc-%{version}.tar.gz
+Source1:	%{name}-doc-%{version}.tar.gz
 # Source1-md5:	7132f73ec63534215004fa08bee3b813
 Patch0:		%{name}-install.patch
 URL:		http://bashdb.sourceforge.net/pydb/
