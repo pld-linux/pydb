@@ -35,6 +35,7 @@ Summary:	Pydb support for Emacs
 Summary(pl):	Wsparcie Pydb dla Emacsa
 Group:		Development/Languages/Python
 Requires:	pydb = %{version}-%{release}
+Requires:	emacs >= 21
 
 %description -n emacs-pydb
 Pydb support for Emacs.
