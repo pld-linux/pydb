@@ -1,0 +1,11 @@
+--- pydb-1.15/Makefile.am~	2006-03-15 21:29:24.000000000 +0100
++++ pydb-1.15/Makefile.am	2006-03-29 15:05:44.000000000 +0200
+@@ -75,7 +75,7 @@
+ 	test -z "$(DESTDIR)$(bindir)" || $(mkdir_p) "$(DESTDIR)$(bindir)"
+ 	rm -f "$(DESTDIR)$(bindir)/$(bin_SCRIPTS)" || true;
+ 	chmod +x "$(DESTDIR)$(pkgpythondir)/$(python_debugger_script)"
+-	$(LN_S) "$(DESTDIR)$(pkgpythondir)/$(python_debugger_script)" "$(DESTDIR)$(bindir)/$(bin_SCRIPTS)"
++	$(LN_S) "$(pkgpythondir)/$(python_debugger_script)" "$(DESTDIR)$(bindir)/$(bin_SCRIPTS)"
+ 
+ # cvs2cl
+ MAINTAINERCLEANFILES = ChangeLog
