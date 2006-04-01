@@ -5,7 +5,7 @@ Version:	1.15
 Release:	1
 License:	GPL v2
 Group:		Development/Languages/Python	
-Source0:	http://dl.sourceforge.net/sourceforge/bashdb/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/bashdb/%{name}-%{version}.tar.gz
 # Source0-md5:	db380a4fb96a378edb5be4d8656981ee
 Source1:	%{name}-doc-%{version}.tar.gz
 # Source1-md5:	7132f73ec63534215004fa08bee3b813
@@ -27,12 +27,14 @@ but has a number of added features. Particularly, it is suitable for
 use with DDD, a graphical debugger front end.
 
 %description -l pl
-Ulepszony debugger Pythona dzia³aj±cy z linii komend, bazowany na
-pdb - standardowym debuggerze Pythona.
+Ulepszony debugger Pythona dzia³aj±cy z linii poleceñ. Jest oparty na
+pdb - standardowym debuggerze Pythona, ale ma wiele dodatkowych
+mo¿liwo¶ci. W szczególno¶ci nadaje siê do u¿ywania z DDD - graficznym
+interfejsem debuggera.
 
 %package -n emacs-pydb
 Summary:	Pydb support for Emacs
-Summary(pl):	Wsparcie Pydb dla Emacsa
+Summary(pl):	Obs³uga Pydb dla Emacsa
 Group:		Development/Languages/Python
 Requires:	pydb = %{version}-%{release}
 Requires:	emacs >= 21
@@ -41,7 +43,7 @@ Requires:	emacs >= 21
 Pydb support for Emacs.
 
 %description -n emacs-pydb -l pl
-Wsparcie Pydb dla Emacs.
+Obs³uga Pydb dla Emacsa.
 
 %prep
 %setup -q -b1
