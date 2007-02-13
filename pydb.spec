@@ -1,5 +1,5 @@
 Summary:	Pydb - Extended Python Debugger
-Summary(pl.UTF-8):   Pydb - rozszerzony debugger Pythona
+Summary(pl.UTF-8):	Pydb - rozszerzony debugger Pythona
 Name:		pydb
 Version:	1.18
 Release:	1
@@ -34,7 +34,7 @@ interfejsem debuggera.
 
 %package -n emacs-pydb
 Summary:	Pydb support for Emacs
-Summary(pl.UTF-8):   Obsługa Pydb dla Emacsa
+Summary(pl.UTF-8):	Obsługa Pydb dla Emacsa
 Group:		Development/Languages/Python
 Requires:	pydb = %{version}-%{release}
 Requires:	emacs >= 21
