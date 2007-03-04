@@ -1,12 +1,12 @@
 Summary:	Pydb - Extended Python Debugger
 Summary(pl.UTF-8):	Pydb - rozszerzony debugger Pythona
 Name:		pydb
-Version:	1.18
+Version:	1.21
 Release:	1
 License:	GPL v2
 Group:		Development/Languages/Python	
 Source0:	http://dl.sourceforge.net/bashdb/%{name}-%{version}.tar.gz
-# Source0-md5:	585b84edff47b826f8b12f72f09230ad
+# Source0-md5:	32502a4733cdb42412643af681f3a6b4
 Source1:	%{name}-doc-1.15.tar.gz
 # Source1-md5:	7132f73ec63534215004fa08bee3b813
 Patch0:		%{name}-install.patch
@@ -50,6 +50,7 @@ Obsługa Pydb dla Emacsa.
 %patch0 -p1 
 
 %build
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
@@ -78,5 +79,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n emacs-pydb
 %defattr(644,root,root,755)
-%doc emacs/{pydb.el,python-mode.el.diff}
+%doc emacs/pydb.el
 %{_emacs_lispdir}/*.elc
