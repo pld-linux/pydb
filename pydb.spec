@@ -2,7 +2,7 @@ Summary:	Pydb - Extended Python Debugger
 Summary(pl.UTF-8):	Pydb - rozszerzony debugger Pythona
 Name:		pydb
 Version:	1.21
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Development/Languages/Python	
 Source0:	http://dl.sourceforge.net/bashdb/%{name}-%{version}.tar.gz
@@ -17,6 +17,7 @@ BuildRequires:	emacs >= 21
 BuildRequires:	python >= 2.1
 BuildRequires:	rpmbuild(macros) >= 1.231
 Requires:	python-modules
+Requires:	pydoc
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
